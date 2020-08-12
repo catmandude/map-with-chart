@@ -25,12 +25,13 @@ function Chart(props) {
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="title" />
-            <YAxis dataKey="total" />
+            <YAxis />
             <Tooltip />
             <Legend />
             <Bar
               dataKey="total"
-              name={selectedDataset.length === 1 ? "Areas in Range" : "Total Crashes"}
+              minPointSize={5}
+              name={selectedDataset.length === 1 ? "Neighborhoods in Range" : "Total Crashes"}
               fill="#E0541F"
               onClick={selectBar}
             />

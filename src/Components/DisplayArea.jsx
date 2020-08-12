@@ -23,7 +23,7 @@ function DisplayArea(props) {
           variant="subtitle1"
           style={{ marginBottom: 30, marginLeft: 35 }}
         >
-          Washington, D.C. - by area
+          Washington, D.C. - by neighborhood
         </Typography>
       </Grid>
       {chartData && (
